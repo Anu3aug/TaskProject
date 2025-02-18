@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Nike Air Max 270",
+      "price": "$150.00",
+      "details": "The Nike Air Max 270 offers plush cushioning and a modern look with a large Air Max unit in the heel for maximum comfort.",
+      "image": "https://images.pexels.com/photos/4219175/pexels-photo-4219175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Adidas Ultraboost 22",
+      "price": "$180.00",
+      "details": "The Adidas Ultraboost 22 provides a responsive and cushioned feel with a Primeknit upper and Boost technology for all-day comfort.",
+      "image": "https://example.com/adidas_ultraboost_22.jpg"
+    },
+    {
+      "name": "Puma RS-X3 Puzzle",
+      "price": "$120.00",
+      "details": "The Puma RS-X3 Puzzle features a bold design with a mix of materials and vibrant colorways, offering both style and comfort.",
+      "image": "https://example.com/puma_rs_x3_puzzle.jpg"
+    },
+    {
+      "name": "New Balance 990v5",
+      "price": "$175.00",
+      "details": "The New Balance 990v5 is an iconic sneaker known for its superior cushioning and support, featuring a premium suede and mesh upper.",
+      "image": "https://example.com/new_balance_990v5.jpg"
+    }
+  ]
+  
