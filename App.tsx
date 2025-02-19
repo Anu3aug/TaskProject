@@ -6,6 +6,7 @@ import { setUserEmail } from './src/redux/Slice/UserSlice';
 import StackNavigation from './src/navigation/StackNavigation';
 import store from './src/redux/Store';
 import { StyleSheet, View } from 'react-native';
+import MainNavigation from './src/navigation/MainNavigation';
 
 const AuthWrapper = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const AuthWrapper = () => {
 
   return (
     <View style={styles.container}>
-      <StackNavigation />
+      <MainNavigation />
     </View>
   );
 };

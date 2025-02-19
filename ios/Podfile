@@ -14,7 +14,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'Awesome_Project' do
+target 'NewProject' do
   config = use_native_modules!
 
   use_react_native!(

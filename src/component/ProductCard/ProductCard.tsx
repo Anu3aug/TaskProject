@@ -1,24 +1,29 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
-import Icon from 'react-native-vector-icons/MaterialIcons'; 
+import AntDesign from 'react-native-vector-icons/AntDesign'; 
 
 
 type Props = {
-    product : any
+    product : any;
+    isFavorite:any;
+    onWishlistToggle:()=>void;
+    onPress:()=>void;
 }
 
-const ProductCard = ({ product }:Props) => {
+const ProductCard = ({ product,isFavorite ,onWishlistToggle,onPress}:Props) => {
+
+  
   return (
-    <View style={styles.card}>
+    <TouchableOpacity style={styles.card}  onPress={onPress}>
       <Image source={product.image} style={styles.image} />
-      <TouchableOpacity style={styles.wishlistIcon}>
-        <Icon name="favorite-border" size={24} color="#000000" />
+      <TouchableOpacity onPress={onWishlistToggle} style={styles.wishlistIcon}>
+        <AntDesign name={isFavorite ? 'heart' : 'hearto'} size={24} color={isFavorite ? '#82031c' : 'black'} />
       </TouchableOpacity>
       <Text style={styles.productName}>{product.name}</Text>
       <Text style={styles.productDetails} numberOfLines={2} ellipsizeMode='tail'>{product.details}</Text>
       <Text style={styles.productPrice}>{product.price}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
